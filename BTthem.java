@@ -16,7 +16,20 @@ public class BTthem {
             System.out.print(a[i]+" ");
         }
     }
-     
+     // TÍNH NĂNG CỦA SANG
+    void timMax() {
+        if (a == null || a.length == 0) {
+            System.out.println("Mảng rỗng!");
+            return;
+        }
+        nt max = a[0]; // Giả sử phần tử đầu tiên là lớn nhất
+        for (int i = 1; i < a.length; i++) {
+            if (a[i] > max) {
+                max = a[i]; 
+            }
+        }
+        System.out.println("Giá trị lớn nhất trong mảng là: " + max);
+    }
     public static void main(String[] args) {
         BTthem mang = new BTthem();
         mang.sinhMang(10);
