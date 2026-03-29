@@ -36,7 +36,10 @@ public class BTthem {
     }
      
     public static void main(String[] args) {
-      
+        BTthem mang = new BTthem();
+        mang.sinhMang(10);
+        mang.in("Mảng ban đầu:");
+
         // Gọi tính năng mới bạn vừa viết
         mang.sapXepGiamDan();
         mang.in("Mảng sau khi sắp xếp GIẢM DẦN:");
