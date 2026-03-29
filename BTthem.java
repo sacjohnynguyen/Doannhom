@@ -19,7 +19,7 @@ public class BTthem {
     // TÍNH NĂNG MỚI CỦA SANG: Hàm tìm và in ra giá trị lớn nhất trong mảng
     void timMax() {
         if (a == null || a.length == 0) {
-            System.out.println("Mảng rỗng!");
+            System.out.println("Mang rong!");
             return;
         }
         
@@ -29,7 +29,7 @@ public class BTthem {
                 max = a[i]; // Cập nhật lại max nếu tìm thấy số lớn hơn
             }
         }
-        System.out.println("Giá trị lớn nhất trong mảng là: " + max);
+        System.out.println("Gia tri lon nhat trong mang la: " + max);
     }
 
     public static void main(String[] args) {
