@@ -8,7 +8,7 @@ public class BTthem {
         Random rd = new Random();
         a = new int[n];
         for(int i=0;i<n;i++){
-            // Lưu ý: rd.nextInt(1, 10) yêu cầu Java 17 trở lên
+
             a[i] = rd.nextInt(9) + 1; 
         }
     }
@@ -18,15 +18,14 @@ public class BTthem {
         for(int i=0;i<a.length;i++){
             System.out.print(a[i] + " ");
         }
-        System.out.println(); // Xuống dòng sau khi in xong
-    }
+        System.out.println(); 
 
-    // Cách 1: Sử dụng thư viện có sẵn (Nhanh và tối ưu)
+
     void sapXepNhanh() {
         Arrays.sort(a);
     }
 
-    // Cách 2: Tự viết thuật toán Bubble Sort (Để học tập)
+
     void sapXepNoiBot() {
         int n = a.length;
         for (int i = 0; i < n - 1; i++) {
