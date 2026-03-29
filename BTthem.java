@@ -16,6 +16,21 @@ public class BTthem {
             System.out.print(a[i]+" ");
         }
     }
+     void inChanDong() {
+        int i = 0;
+        int dem = 1;
+        while (i < a.length) {
+            System.out.print("Chan dong " + dem + ": ");
+            System.out.print(a[i] + " ");
+            while (i < a.length - 1 && a[i] >= a[i + 1]) {
+                i++;
+                System.out.print(a[i] + " ");
+            }
+            System.out.println();
+            i++;
+            dem++;
+        }
+    }
     // TÍNH NĂNG MỚI CỦA SANG: Hàm tìm và in ra giá trị lớn nhất trong mảng
     void timMax() {
         if (a == null || a.length == 0) {
@@ -36,7 +51,7 @@ public class BTthem {
         BTthem mang = new BTthem();
         mang.sinhMang(10);
         mang.in("Hien thi mang:");
-        
+        mang.inChanDong();
         // Gọi tính năng mới
         mang.timMax(); 
     }
