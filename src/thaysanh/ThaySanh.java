@@ -30,6 +30,7 @@ public class ThaySanh {
             i++;
             dem++;
         }
+         System.out.print("Xong!");
     }
     public static void main(String[] args) {
         ThaySanh mang = new ThaySanh();
