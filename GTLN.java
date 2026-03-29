@@ -28,7 +28,7 @@ public class ThaySanh {
                 max = a[i]; // Cập nhật lại max nếu tìm thấy số lớn hơn
             }
         }
-        System.out.println("GGTLN trong mang la " + max);
+        System.out.println("GTLN trong mang la " + max);
     }
     public static void main(String[] args) {
         ThaySanh mang = new ThaySanh();
